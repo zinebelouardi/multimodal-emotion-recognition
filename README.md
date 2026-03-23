@@ -3,8 +3,8 @@
 ## 📌 Overview
 Ce projet implémente un système de **reconnaissance des émotions multimodale** en combinant :
 
-- 🎥 **Vidéo** (expressions faciales)
-- 🔊 **Audio** (caractéristiques vocales)
+-  **Vidéo** (expressions faciales)
+-  **Audio** (caractéristiques vocales)
 
 L'objectif est d'améliorer la précision en fusionnant plusieurs sources d'information.
 
@@ -14,11 +14,11 @@ L'objectif est d'améliorer la précision en fusionnant plusieurs sources d'info
 
 Le modèle est basé sur une architecture deep learning multimodale :
 
-- 📷 **Backbone Vidéo** : EfficientNet-B0 
-- 🔊 **Backbone Audio** : ResNet18 
-- 🔗 **Fusion** : concaténation des features audio + vidéo
-- 🔁 **Temporal Modeling** : LSTM
-- 🎯 **Classification** : réseau fully connected
+-  **Backbone Vidéo** : EfficientNet-B0 
+-  **Backbone Audio** : ResNet18 
+-  **Fusion** : concaténation des features audio + vidéo
+-  **Temporal Modeling** : LSTM
+-  **Classification** : réseau fully connected
 
 ---
 
@@ -33,7 +33,7 @@ Les données sont traitées pour créer des paires :
 - `audio_path`
 - `emotion`
 
-### 🎭 Émotions détectées :
+###  Émotions détectées :
 - Angry 😠  
 - Disgust 🤢  
 - Fear 😨  
