@@ -45,8 +45,8 @@ Les données sont traitées pour créer des paires :
 
 ##  Résultats
 
-### 🔹 Matrice de confusion
-Ajoute ici ton image 👇
+###  Matrice de confusion
 
-```markdown
+
+
 ![Confusion Matrix](La matrice de confusion.PNG)
