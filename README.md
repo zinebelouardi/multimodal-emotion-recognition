@@ -48,4 +48,4 @@ Les données sont traitées pour créer des paires :
 ###  Matrice de confusion
 
 
-![Confusion Matrix](La matrice de confusion.PNG)
+![Confusion Matrix](MC.PNG)
