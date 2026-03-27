@@ -2,22 +2,22 @@
 
 Reconnaissance d'émotions multimodale (audio + vidéo) sur le dataset **CREMA-D**, avec un modèle basé sur **EfficientNet-B0**, **ResNet18** et **LSTM**.
 
+---
 
+##  Structure du projet
 
-## Structure du projet
-
-
+```
 multimodal_emotion_detection/
 │
 ├── src/
-│   ├── __init__.py       # Exports du package
-│   ├── data_loader.py    # Chargement des métadonnées audio/vidéo
-│   ├── dataset.py        # Dataset PyTorch (frames vidéo + spectrogramme Mel)
-│   ├── model.py          # Architecture MultimodalLSTM
-│   ├── train.py          # Boucle d'entraînement + évaluation
-│   └── eda.py            # Analyse exploratoire des données
+│   ├── __init__.py
+│   ├── data_loader.py
+│   ├── dataset.py
+│   ├── model.py
+│   ├── train.py
+│   └── eda.py
 │
-├── outputs/              # 
+├── outputs/
 ├── requirements.txt
 ├── .gitignore
 └── README.md
@@ -25,26 +25,27 @@ multimodal_emotion_detection/
 
 ---
 
-## Installation
+##  Installation
 
-
+```bash
 pip install -r requirements.txt
 ```
 
 ---
 
-## Dataset
+##  Dataset
 
 Le projet utilise le dataset **CREMA-D** disponible sur Kaggle :
 
-- Vidéos `.mp4` : [`alenken/multimodal-emotion-recognition-ravdess`](https://www.kaggle.com/datasets/alenken/multimodal-emotion-recognition-ravdess)
-- Audio `.wav`  : [`ejlok1/cremad`](https://www.kaggle.com/datasets/ejlok1/cremad)
+* Vidéos `.mp4` : https://www.kaggle.com/datasets/alenken/multimodal-emotion-recognition-ravdess
+* Audio `.wav`  : https://www.kaggle.com/datasets/ejlok1/cremad
 
-6 émotions : `angry`, `disgust`, `fear`, `happy`, `neutral`, `sad`
+ 6 émotions :
+`angry`, `disgust`, `fear`, `happy`, `neutral`, `sad`
 
 ---
 
-## Lancement de l'entraînement
+##  Lancement de l'entraînement
 
 Modifier les chemins dans `src/train.py` :
 
@@ -61,25 +62,24 @@ python -m src.train
 
 ---
 
-## Architecture
+##  Architecture
 
-```
 ![Architecture](images/architecture.png)
 
 ---
 
-## Résultats
+##  Résultats
 
-Les courbes d'entraînement et la matrice de confusion sont sauvegardées dans `outputs/` après l'entraînement.
+Les courbes d'entraînement et la matrice de confusion sont sauvegardées dans `outputs/`.
 
-| Métrique         | Valeur (exemple) |
-|------------------|-----------------|
-| Meilleure val acc |86%              |
-| Paramètres totaux | ~12M            |
+| Métrique          | Valeur |
+| ----------------- | ------ |
+| Meilleure val acc | 86%    |
+| Paramètres totaux | ~12M   |
 
 ---
 
-## Utilisation programmatique
+##  Utilisation programmatique
 
 ```python
 from src.data_loader import load_multimodal_dataframe
