@@ -2,11 +2,11 @@
 
 Reconnaissance d'émotions multimodale (audio + vidéo) sur le dataset **CREMA-D**, avec un modèle basé sur **EfficientNet-B0**, **ResNet18** et **LSTM**.
 
----
+
 
 ## Structure du projet
 
-```
+
 multimodal_emotion_detection/
 │
 ├── src/
@@ -87,7 +87,7 @@ Les courbes d'entraînement et la matrice de confusion sont sauvegardées dans `
 
 | Métrique         | Valeur (exemple) |
 |------------------|-----------------|
-| Meilleure val acc | —               |
+| Meilleure val acc |86%              |
 | Paramètres totaux | ~12M            |
 
 ---
