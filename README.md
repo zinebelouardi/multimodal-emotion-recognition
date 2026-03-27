@@ -17,7 +17,7 @@ multimodal_emotion_detection/
 │   ├── train.py          # Boucle d'entraînement + évaluation
 │   └── eda.py            # Analyse exploratoire des données
 │
-├── outputs/              # Modèles sauvegardés + figures (non versionnés)
+├── outputs/              # 
 ├── requirements.txt
 ├── .gitignore
 └── README.md
@@ -27,7 +27,7 @@ multimodal_emotion_detection/
 
 ## Installation
 
-```bash
+
 pip install -r requirements.txt
 ```
 
@@ -64,20 +64,7 @@ python -m src.train
 ## Architecture
 
 ```
-Vidéo [B, T, 3, 224, 224]          Audio [B, 1, 128, 128]
-        ↓                                   ↓
-  EfficientNet-B0                       ResNet18
-        ↓                                   ↓
-  Linear(1280→512)                   Linear(512→512)
-        ↓                                   ↓
-        └──────────── Concat ───────────────┘
-                          ↓
-                    LSTM (2 couches)
-                          ↓
-                    Dernier timestep
-                          ↓
-                  Classifier MLP → logits
-```
+![Architecture](images/architecture.png)
 
 ---
 
