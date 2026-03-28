@@ -77,6 +77,9 @@ Les courbes d'entraînement et la matrice de confusion sont sauvegardées dans `
 | Meilleure val acc | 86%    |
 | Paramètres totaux | ~12M   |
 
+
+-----
+![ Résultats](output/La matrice de confusion.PNG)
 ---
 
 ##  Utilisation programmatique
