@@ -78,7 +78,7 @@ Les courbes d'entraînement et la matrice de confusion sont sauvegardées dans `
 | Paramètres totaux | ~12M   |
 
 
-![Architecture](output/La matrice de confusion.PNG)
+![Architecture](matrice.png)
 ![Architecture](images/MC.PNG)
 
 
