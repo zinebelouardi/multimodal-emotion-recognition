@@ -64,7 +64,7 @@ python -m src.train
 
 ##  Architecture
 
-![Architecture](images/archi.png)
+![Architecture](images/archi.PNG)
 
 ---
 
